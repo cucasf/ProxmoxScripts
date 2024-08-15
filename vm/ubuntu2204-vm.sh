@@ -417,9 +417,9 @@ qm set $VMID \
 
   <a href='https://ko-fi.com/D1D7EP4GF'><img src='https://img.shields.io/badge/&#x2615;-Buy me a coffee-blue' /></a>
   </div>" >/dev/null
-msg_ok "Created a Ubuntu 22.04 VM ${CL}${BL}(${HN})"
+msg_ok "Created a Ubuntu 22.04 VM ${CL}${BL}(${HN}) (${VMID})"
 if [ "$START_VM" == "yes" ]; then
-  msg_info "Starting Ubuntu 22.04 VM"
+  msg_info "Starting Ubuntu 22.04 VM (${VMID})"
   qm start $VMID
   msg_ok "Started Ubuntu 22.04 VM"
 fi
